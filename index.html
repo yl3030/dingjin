@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鼎金國際證券</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container d-flex align-items-center"><img src="./public/img/logo.png" alt="" class="header_logo"></div>
+    </header>
+    <main class="main">
+        <div class="banner">
+            <div class="banner_slider">
+                <div class="swiper-container banner_swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./public/img/banner.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./public/img/banner.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./public/img/banner.png" alt=""></div>
+                    </div>     
+                </div>
+                <img class="banner_mask d-md-block d-none" src="./public/img/banner_mask.png" alt="">
+                <img class="banner_mask d-md-none" src="./public/img/banner_mask_m.png" alt="">
+                <div class="banner_swiper_pagination"></div>
+            </div>
+            <div class="banner_text">
+                <h1>
+                    歡迎來到我們的<br>
+                    期貨模擬交易系統！
+                </h1>
+                <p class="text">
+                    這個系統是為了幫助大眾更好地掌握期貨交易技巧而開發的。如果您是一位期貨交易的新手或者對風險把控較差，本系統將是您致勝的利器！
+                </p>
+                <button class="btn_pill_bgBlue" data-bs-toggle="modal" data-bs-target="#openAccount">
+                    <span>快速開戶</span>
+                    <div class="btn_pill_bgBlue_icon">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.87183 10.9487C3.87183 10.4531 4.27362 10.0513 4.76926 10.0513H17.3334C17.829 10.0513 18.2308 10.4531 18.2308 10.9487C18.2308 11.4444 17.829 11.8462 17.3334 11.8462H4.76926C4.27362 11.8462 3.87183 11.4444 3.87183 10.9487Z" fill="#2386BC"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4168 4.03208C10.7673 3.68161 11.3355 3.68161 11.6859 4.03208L17.968 10.3141C18.3185 10.6646 18.3185 11.2328 17.968 11.5833L11.6859 17.8654C11.3355 18.2158 10.7673 18.2158 10.4168 17.8654C10.0663 17.5149 10.0663 16.9467 10.4168 16.5962L16.0643 10.9487L10.4168 5.30125C10.0663 4.95078 10.0663 4.38255 10.4168 4.03208Z" fill="#2386BC"/>
+                        </svg>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="why">
+            <div class="container d-flex flex-wrap align-items-center">
+                <div class="why_pic"><img src="./public/img/why.png" alt=""></div>
+                <div class="why_text">
+                    <h2 class="subTitle">為何選擇鼎金國際證券</h2>
+                    <p class="text">
+                        全方位期貨模擬交易系統及報價服務。報價系統來自CME比較美國華爾街金融市場所使用最快速穩定即時的報價，以提供客戶最具競爭力的期貨看盤報價軟體為宗旨。<br>
+                        <br>
+                        風險控制是交易的關鍵，本系統提供多種風險控制手段，包括止損、止盈等，完全符合業內慣例。統計分析則能幫您更好地了解自己的交易情況，通過對風險和收益的分析，制定更有效的投資決策！
+                    </p>
+                    <div class="why_icon row">
+                        <div class="col-md-6">
+                            <div class="why_icon_item">
+                                <div class="why_icon_pic"><img src="./public/img/investment.svg" alt=""></div>
+                                <p class="why_icon_text">輕鬆快速地實現投資策略</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="why_icon_item">
+                                <div class="why_icon_pic"><img src="./public/img/support.svg" alt=""></div>
+                                <p class="why_icon_text">全天候提供客戶服務團隊解決問題</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="why_icon_item">
+                                <div class="why_icon_pic"><img src="./public/img/analytics.svg" alt=""></div>
+                                <p class="why_icon_text">多角度分析，多種技術指標服務</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="why_icon_item">
+                                <div class="why_icon_pic"><img src="./public/img/strategy.svg" alt=""></div>
+                                <p class="why_icon_text">定期提供最新市場分析和投資策略</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn_pill_bgBlue mx-auto" data-bs-toggle="modal" data-bs-target="#openAccount">
+                        <span>快速開戶</span>
+                        <div class="btn_pill_bgBlue_icon">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.87183 10.9487C3.87183 10.4531 4.27362 10.0513 4.76926 10.0513H17.3334C17.829 10.0513 18.2308 10.4531 18.2308 10.9487C18.2308 11.4444 17.829 11.8462 17.3334 11.8462H4.76926C4.27362 11.8462 3.87183 11.4444 3.87183 10.9487Z" fill="#2386BC"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4168 4.03208C10.7673 3.68161 11.3355 3.68161 11.6859 4.03208L17.968 10.3141C18.3185 10.6646 18.3185 11.2328 17.968 11.5833L11.6859 17.8654C11.3355 18.2158 10.7673 18.2158 10.4168 17.8654C10.0663 17.5149 10.0663 16.9467 10.4168 16.5962L16.0643 10.9487L10.4168 5.30125C10.0663 4.95078 10.0663 4.38255 10.4168 4.03208Z" fill="#2386BC"/>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="wiser">
+            <div class="container d-flex flex-wrap align-items-center">
+                <div class="wiser_text">
+                    <h2 class="subTitle">鼎金幫您成為更加明智的投資人</h2>
+                    <p class="text">
+                        專門為期貨投資者設計的，功能強大、易用便捷、反應迅速。<br>
+                        為了幫助客戶更好地把握市場，我們的軟體內置強大的技術指標服務。客戶可以根據自己的需求設置各種參數，得到即時的技術分析報告，幫助客戶制定更可靠的投資決策。
+                    </p>
+                    <button class="btn_pill_bgBlue" data-bs-toggle="modal" data-bs-target="#openAccount">
+                        <span>快速開戶</span>
+                        <div class="btn_pill_bgBlue_icon">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.87183 10.9487C3.87183 10.4531 4.27362 10.0513 4.76926 10.0513H17.3334C17.829 10.0513 18.2308 10.4531 18.2308 10.9487C18.2308 11.4444 17.829 11.8462 17.3334 11.8462H4.76926C4.27362 11.8462 3.87183 11.4444 3.87183 10.9487Z" fill="#2386BC"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4168 4.03208C10.7673 3.68161 11.3355 3.68161 11.6859 4.03208L17.968 10.3141C18.3185 10.6646 18.3185 11.2328 17.968 11.5833L11.6859 17.8654C11.3355 18.2158 10.7673 18.2158 10.4168 17.8654C10.0663 17.5149 10.0663 16.9467 10.4168 16.5962L16.0643 10.9487L10.4168 5.30125C10.0663 4.95078 10.0663 4.38255 10.4168 4.03208Z" fill="#2386BC"/>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+                <div class="wiser_icon">
+                    <div class="wiser_icon_top d-flex align-items-end justify-content-center">
+                        <div class="wiser_icon_item tall">
+                            <img src="./public/img/lecture.svg" alt="">
+                            <p>全方位教育</p>
+                        </div>
+                        <div class="wiser_icon_item wide">
+                            <img src="./public/img/quality-service.svg" alt="">
+                            <p>優質的服務</p>
+                        </div>
+                    </div>
+                    <div class="wiser_icon_bottom d-flex justify-content-center">
+                        <div class="wiser_icon_item wide">
+                            <img src="./public/img/creative.svg" alt="">
+                            <p>創新平台</p>
+                        </div>
+                        <div class="wiser_icon_item square">
+                            <img src="./public/img/best-price.svg" alt="">
+                            <p>無隱藏費用</p>
+                        </div>
+                        <div class="wiser_icon_item tall">
+                            <img src="./public/img/wide.svg" alt="">
+                            <p>廣泛的服務</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="angle">
+            <div class="container d-flex flex-wrap align-items-center">
+                <div class="angle_pic"><img src="./public/img/angle.png" alt=""></div>
+                <div class="angle_text">
+                    <h2 class="subTitle">多角度投資策略，24小時全天候客服支援</h2>
+                    <p class="text">
+                        我們的軟體提供多角度投資策略，內置技術指標服務，讓您輕鬆快速模擬並實現投資策略。此外，我們的服務團隊全天候提供24小時支援，定期提供最新市場分析和投資策略，幫助您應對市場變動。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="member">
+            <img class="round round-1" src="./public/img/round-gray-1.svg" alt="">
+            <img class="round round-2" src="./public/img/round-blue-1.svg" alt="">
+            <img class="round round-3" src="./public/img/round-blue-2.svg" alt="">
+            <div class="container d-flex align-items-center justify-content-between">
+                <h2 class="subTitle m-0">會員極力推薦</h2>
+                <div class="member_arrow d-flex align-items-center">
+                    <div class="member_arrow_item member_arrow_prev">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.1282 10.9487C18.1282 10.4531 17.7264 10.0513 17.2307 10.0513H4.66663C4.17099 10.0513 3.7692 10.4531 3.7692 10.9487C3.7692 11.4443 4.17099 11.8461 4.66663 11.8461H17.2307C17.7264 11.8461 18.1282 11.4443 18.1282 10.9487Z" fill="#2386BC"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5833 4.03202C11.2329 3.68155 10.6646 3.68155 10.3142 4.03202L4.03212 10.3141C3.68165 10.6645 3.68165 11.2328 4.03212 11.5832L10.3142 17.8653C10.6646 18.2158 11.2329 18.2158 11.5833 17.8653C11.9338 17.5148 11.9338 16.9466 11.5833 16.5961L5.93587 10.9487L11.5833 5.30118C11.9338 4.95071 11.9338 4.38249 11.5833 4.03202Z" fill="#2386BC"/>
+                        </svg>
+                    </div>
+                    <div class="member_arrow_item member_arrow_next">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.87183 10.9487C3.87183 10.4531 4.27362 10.0513 4.76926 10.0513H17.3334C17.829 10.0513 18.2308 10.4531 18.2308 10.9487C18.2308 11.4444 17.829 11.8462 17.3334 11.8462H4.76926C4.27362 11.8462 3.87183 11.4444 3.87183 10.9487Z" fill="#2386BC"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4168 4.03208C10.7673 3.68161 11.3355 3.68161 11.6859 4.03208L17.968 10.3141C18.3185 10.6646 18.3185 11.2328 17.968 11.5833L11.6859 17.8654C11.3355 18.2158 10.7673 18.2158 10.4168 17.8654C10.0663 17.5149 10.0663 16.9467 10.4168 16.5962L16.0643 10.9487L10.4168 5.30125C10.0663 4.95078 10.0663 4.38255 10.4168 4.03208Z" fill="#2386BC"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="member_swiper-box">
+                <div class="swiper-container member_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="member_swiper_item">
+                                <div class="member_swiper_pic"><img src="./public/img/member-1.png" alt=""></div>
+                                <div class="member_swiper_text">
+                                    <p>
+                                        這個期貨模擬系統真的很棒！使用起來非常順暢，而且我完全信賴它的準確性。
+                                    </p>
+                                </div>
+                                <p class="member_swiper_name">新莊張小姐</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="member_swiper_item">
+                                <div class="member_swiper_pic"><img src="./public/img/member-2.png" alt=""></div>
+                                <div class="member_swiper_text">
+                                    <p>
+                                        這個系統功能齊全，操作簡單易懂，是我在期貨交易中的最佳幫手。
+                                    </p>
+                                </div>
+                                <p class="member_swiper_name">高雄黃副總</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="member_swiper_item">
+                                <div class="member_swiper_pic"><img src="./public/img/member-3.png" alt=""></div>
+                                <div class="member_swiper_text">
+                                    <p>
+                                        我以前試用過其他系統，但這個期貨模擬系統給我的印象最深刻。它不僅穩定可靠，還提供了出色的數據分析工具。
+                                    </p>
+                                </div>
+                                <p class="member_swiper_name">台中徐太太</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="member_swiper_item">
+                                <div class="member_swiper_pic"><img src="./public/img/member-4.png" alt=""></div>
+                                <div class="member_swiper_text">
+                                    <p>
+                                        使用這個系統進行期貨交易模擬是一種享受。它的用戶界面非常直觀，讓我可以快速執行交易，並且不需要擔心任何技術問題。
+                                    </p>
+                                </div>
+                                <p class="member_swiper_name">台北鐘伯伯</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="member_swiper_item">
+                                <div class="member_swiper_pic"><img src="./public/img/member-5.png" alt=""></div>
+                                <div class="member_swiper_text">
+                                    <p>
+                                        我非常滿意這個系統的報價速度和即時更新功能。我能夠及時抓住市場機會，並做出有利的交易決策。
+                                    </p>
+                                </div>
+                                <p class="member_swiper_name">台南施先生</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="member_swiper_item">
+                                <div class="member_swiper_pic"><img src="./public/img/member-6.png" alt=""></div>
+                                <div class="member_swiper_text">
+                                    <p>
+                                        使用這個系統，我感到非常安心。它的安全措施讓我放心地進行交易，而且我知道我的資金和個人資訊是得到保護的。
+                                    </p>
+                                </div>
+                                <p class="member_swiper_name">花蓮黃太太</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="member_swiper_item">
+                                <div class="member_swiper_pic"><img src="./public/img/member-7.png" alt=""></div>
+                                <div class="member_swiper_text">
+                                    <p>
+                                        這個期貨模擬系統給了我巨大的信心和信任感。我相信它的數據和分析是準確且可靠的，這是我對一個系統的基本要求。
+                                    </p>
+                                </div>
+                                <p class="member_swiper_name">金門吳先生</p>
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+        </div>
+        <div class="prize-box">
+            <img class="round prize_round" src="./public/img/round-blue-1.svg" alt="">
+            <div class="prize">
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <div class="prize_item">
+                            <img src="./public/img/prize-1.png" alt="">
+                            <p>最佳教育經紀商</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="prize_item">
+                            <img src="./public/img/prize-2.png" alt="">
+                            <p>亞洲最佳交易商</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="prize_item">
+                            <img src="./public/img/prize-3.png" alt="">
+                            <p>澳洲最佳交易商</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="prize_item">
+                            <img src="./public/img/prize-4.png" alt="">
+                            <p>澳洲證券投資委員會授權監管</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="explore">
+            <img class="round explore_round" src="./public/img/round-blue-3.svg" alt="">
+            <div class="container">
+                <div class="explore_content">
+                    <img src="./public/img/explore.png" alt="">
+                    <div class="explore_text">
+                        <h2 class="subTitle">在這裡探索你交易期貨所需的一切</h2>
+                        <p class="text">
+                            立即與我們開戶即可體驗、專業、高效、穩定的期貨模擬交易軟體平台，可以享受最先進的技術，專業的投資分析，以及優質的客戶服務。無論您是新手還是老手，本系統將是您不二的選擇！簡單易用，功能強大，我們都會為您提供最優質、最貼心的服務，讓您在投資路上走得更穩更遠，快來體驗吧！
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <img class="round footer_round" src="./public/img/round-gray-3.svg" alt="">
+        <div class="container d-lg-flex flex-wrap align-items-center justify-content-center">
+            <form action="" class="footer_form">
+                <h3>登記已獲得最新資訊</h3>
+                <div class="row">
+                    <div class="col-lg-12 col-ms-4 col-12">
+                        <div class="input-bgWhite input">
+                            <label for="">姓名</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-ms-4 col-12">
+                        <div class="input-bgWhite input">
+                            <label for="">Line ID</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-ms-4 col-12">
+                        <div class="input-bgWhite input">
+                            <label for="">手機</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+                <button>送出</button>
+            </form>
+            <div class="footer_line d-flex align-items-center flex-wrap">
+                <div class="footer_line_qrcode"><img src="./public/img/qrcode.png" alt=""></div>
+                <div class="footer_line_text">
+                    <h3>立刻加入我們的各大社群！</h3>
+                    <p>無需保證金，無匯率問題，千言萬語不如您親身體驗！</p>
+                    <a href="https://line.me/R/ti/p/@738mgrwn" target="_blank" class="btn_pill_bgWhite d-sm-flex d-none" data-bs-toggle="modal" data-bs-target="#openAccount">
+                        <span>
+                            立即加入24小時<br>
+                            Line客服
+                        </span>
+                        <div class="btn_pill_bgWhite_icon">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.87183 10.9487C3.87183 10.4531 4.27362 10.0513 4.76926 10.0513H17.3334C17.829 10.0513 18.2308 10.4531 18.2308 10.9487C18.2308 11.4444 17.829 11.8462 17.3334 11.8462H4.76926C4.27362 11.8462 3.87183 11.4444 3.87183 10.9487Z" fill="#2386BC"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4168 4.03208C10.7673 3.68161 11.3355 3.68161 11.6859 4.03208L17.968 10.3141C18.3185 10.6646 18.3185 11.2328 17.968 11.5833L11.6859 17.8654C11.3355 18.2158 10.7673 18.2158 10.4168 17.8654C10.0663 17.5149 10.0663 16.9467 10.4168 16.5962L16.0643 10.9487L10.4168 5.30125C10.0663 4.95078 10.0663 4.38255 10.4168 4.03208Z" fill="#2386BC"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <a href="https://line.me/R/ti/p/@738mgrwn" target="_blank" class="btn_pill_bgWhite d-sm-none mt-5 mx-auto" data-bs-toggle="modal" data-bs-target="#openAccount">
+                    <span>
+                        立即加入24小時<br>
+                        Line客服
+                    </span>
+                    <div class="btn_pill_bgWhite_icon">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.87183 10.9487C3.87183 10.4531 4.27362 10.0513 4.76926 10.0513H17.3334C17.829 10.0513 18.2308 10.4531 18.2308 10.9487C18.2308 11.4444 17.829 11.8462 17.3334 11.8462H4.76926C4.27362 11.8462 3.87183 11.4444 3.87183 10.9487Z" fill="#2386BC"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4168 4.03208C10.7673 3.68161 11.3355 3.68161 11.6859 4.03208L17.968 10.3141C18.3185 10.6646 18.3185 11.2328 17.968 11.5833L11.6859 17.8654C11.3355 18.2158 10.7673 18.2158 10.4168 17.8654C10.0663 17.5149 10.0663 16.9467 10.4168 16.5962L16.0643 10.9487L10.4168 5.30125C10.0663 4.95078 10.0663 4.38255 10.4168 4.03208Z" fill="#2386BC"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="openAccount" tabindex="-1" aria-labelledby="openAccountLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+                <h5 class="modal-title" id="openAccountLabel">實名認證</h5>
+                <p>24 小時全天候客服人員為您服務，我們極度重視及保護您的隱私權</p>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-bgBlue input">
+                            <label for="">姓名</label>
+                            <input type="text">
+                        </div>
+                        <div class="input-bgBlue input">
+                            <label for="">手機</label>
+                            <input type="text">
+                        </div>
+                        <div class="input-bgBlue input">
+                            <label for="">Line ID</label>
+                            <input type="text">
+                        </div>
+                        <div class="input-bgBlue input">
+                            <label for="">身分證</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="input-bgBlue input">
+                            <label for="">銀行代碼</label>
+                            <input type="text">
+                        </div>
+                        <div class="input-bgBlue input">
+                            <label for="">戶名</label>
+                            <input type="text">
+                        </div>
+                        <div class="input-bgBlue input">
+                            <label for="">帳號</label>
+                            <input type="text">
+                        </div>
+                        <button class="btn_pill_bgBlue ms-auto" data-bs-toggle="modal" data-bs-target="#openAccount">
+                            <span>送出</span>
+                            <div class="btn_pill_bgBlue_icon">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.87183 10.9487C3.87183 10.4531 4.27362 10.0513 4.76926 10.0513H17.3334C17.829 10.0513 18.2308 10.4531 18.2308 10.9487C18.2308 11.4444 17.829 11.8462 17.3334 11.8462H4.76926C4.27362 11.8462 3.87183 11.4444 3.87183 10.9487Z" fill="#2386BC"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4168 4.03208C10.7673 3.68161 11.3355 3.68161 11.6859 4.03208L17.968 10.3141C18.3185 10.6646 18.3185 11.2328 17.968 11.5833L11.6859 17.8654C11.3355 18.2158 10.7673 18.2158 10.4168 17.8654C10.0663 17.5149 10.0663 16.9467 10.4168 16.5962L16.0643 10.9487L10.4168 5.30125C10.0663 4.95078 10.0663 4.38255 10.4168 4.03208Z" fill="#2386BC"/>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <img src="./public/img/x.svg" alt="" class="cross" data-bs-dismiss="modal">
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/swiper/swiper-bundle.min.js"></script>
+    <script src="./public/js/index.js"></script>
+</body>
+</html>
