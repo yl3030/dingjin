@@ -21,6 +21,12 @@ input, button {
     border-radius: 0;;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
 a {
     text-decoration: none;
 }
@@ -208,7 +214,8 @@ a {
     top: 0;
     left: 0;
     transition: $transition-common;
-    z-index: 2;
+    z-index: 10;
+    background: linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.9) 100%);
     >.container {
         height: 100%;
     }
@@ -216,8 +223,51 @@ a {
         width: 150px;
     }
     &.scroll {
-        background-color: rgba(255,255,255,0.9);
+        // background-color: rgba(255,255,255,0.9);
+        // box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+    }
+    .btn-download {
+        background-color: $primary-500;
+        border-radius: 100px;
+        padding: 6px 20px;
+        transition: $transition-common;
+        cursor: pointer;
+        position: relative;
+        span {
+            color: #fff;
+            font-size: 14px;
+            margin-right: 5px;
+        }
+        &:hover {
+            background-color: $primary-600;
+        }
+    }
+    .download-list {
+        position: absolute;
+        top: calc(100% + 10px);
+        right: 0;
+        background-color: #fff;
+        border-radius: 10px;
         box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+        padding: 10px 0;
+        display: none;
+        a {
+            display: flex;
+            align-items: center;
+            transition: $transition-common;
+            padding: 5px 15px;
+            img {
+                width: 20px;
+                margin-right: 8px;
+            }
+            span {
+                color: $gray-500;
+                font-size: 13px;
+            }
+            &:hover {
+                background-color: $primary-400;
+            }
+        }
     }
     @media screen and (max-width: 991px) {
         >.container {
@@ -225,10 +275,10 @@ a {
         }
     }
     @media screen and (max-width: 575px) {
-        width: fit-content;
-        height: fit-content;
-        background-color: rgba(255,255,255,0.9);
-        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+        // width: fit-content;
+        // height: fit-content;
+        // background-color: rgba(255,255,255,0.9);
+        // box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
         >.container {
             padding: 20px 20px;
         }
@@ -299,7 +349,11 @@ a {
         position: absolute;
         top: 35.9%;
         left: calc((100vw - 1320px) / 2 + 20px);
-        width: 30%;
+        // width: 30%;
+        // width: 25%;
+        &_main {
+            width: 40%;
+        }
         z-index: 3;
         h1 {
             color: $dark;
@@ -327,6 +381,9 @@ a {
         }
         &_text {
             left: calc((100vw - 960px) / 2 + 20px);
+            &_main {
+                // width: 30%;
+            }
         }
     }
     @media screen and (max-width: 991px) {
@@ -337,7 +394,7 @@ a {
         }
         &_text {
             left: 20px;
-            width: 40%;
+            // width: 40%;
             h1 {
                 font-size: 32px;
             }
@@ -356,6 +413,9 @@ a {
             position: static;
             padding: 25px 20px 50px;
             width: 100%;
+            &_main {
+                width: 100%;
+            }
             h1 {
                 font-size: 28px;
             }
@@ -364,6 +424,16 @@ a {
             &_pagination {
                 right: inherit;
                 left: 25px;
+            }
+        }
+    }
+    @media screen and (max-width: 450px) {
+        .btn_pill_bgBlue {
+            width: 100%;
+            margin: 0 0 20px !important;
+            span {
+                width: calc(100% - 35px);
+                margin: 0;
             }
         }
     }
@@ -1004,7 +1074,7 @@ a {
 }
 
 .footer {
-    padding: 80px 0;
+    padding: 80px 0 15px;
     background-color: $primary-600;
     position: relative;
     &_round {
@@ -1055,7 +1125,7 @@ a {
             color: #fff;
             font-size: 36px;
             font-weight: 700;
-            margin-bottom: 10px;
+            margin-bottom: 30px;
         }
         p {
             color: #fff;
@@ -1064,6 +1134,12 @@ a {
         .btn_pill_bgWhite {
             width: fit-content;
         }
+    }
+    .copyright {
+        text-align: center;
+        margin: 80px 0 0;
+        color: #fff;
+        font-size: 14px;
     }
     @media screen and (max-width: 1199px) {
         >.container {
@@ -1166,4 +1242,45 @@ a {
     max-width: 940px;
     margin: 10vw auto;
     width: calc(100% - 30px);
+}
+
+.btn-fixed {
+    position: fixed;
+    right: 40px;
+    bottom: 80px;
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #4CAF50;
+    z-index: 5;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    transition: $transition-common;
+    transform-origin: 30px;
+    transform: rotate(0deg);
+    svg {
+        width: 55%;
+        height: 55%;
+        path {
+            fill: #4CAF50;
+        }
+    }
+    &:hover {
+        transform: rotate(30deg);
+        background-color: #4CAF50;
+        svg {
+            path {
+                fill: #fff;
+            }
+        }
+    }
+    @media screen and (max-width: 767px) {
+        width: 50px;
+        height: 50px;
+        right: 20px;
+        bottom: 30px;    
+    }
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>鼎金國際證券</title>
+    <title>鼎金科技</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -14,7 +14,27 @@
 </head>
 <body>
     <header class="header">
-        <div class="container d-flex align-items-center"><img src="./public/img/logo.png" alt="" class="header_logo"></div>
+        <div class="container d-flex align-items-center justify-content-between">
+            <img src="./public/img/logo.png" alt="" class="header_logo">
+            <div class="btn-download d-flex align-items-center">
+                <span>下載</span>
+                <img src="./public/img/chevron-down.svg" alt="">
+                <ul class="download-list">
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="./public/img/computer.svg" alt="">
+                            <span>AnyDesk</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="./public/img/laptop.svg" alt="">
+                            <span>Teamviewer</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
     <main class="main">
         <div class="banner">
@@ -31,29 +51,42 @@
                 <div class="banner_swiper_pagination"></div>
             </div>
             <div class="banner_text">
-                <h1>
-                    歡迎來到我們的<br>
-                    期貨模擬交易系統！
-                </h1>
-                <p class="text">
-                    這個系統是為了幫助大眾更好地掌握期貨交易技巧而開發的。如果您是一位期貨交易的新手或者對風險把控較差，本系統將是您致勝的利器！
-                </p>
-                <button class="btn_pill_bgBlue" data-bs-toggle="modal" data-bs-target="#openAccount">
-                    <span>快速開戶</span>
-                    <div class="btn_pill_bgBlue_icon">
-                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.87183 10.9487C3.87183 10.4531 4.27362 10.0513 4.76926 10.0513H17.3334C17.829 10.0513 18.2308 10.4531 18.2308 10.9487C18.2308 11.4444 17.829 11.8462 17.3334 11.8462H4.76926C4.27362 11.8462 3.87183 11.4444 3.87183 10.9487Z" fill="#2386BC"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4168 4.03208C10.7673 3.68161 11.3355 3.68161 11.6859 4.03208L17.968 10.3141C18.3185 10.6646 18.3185 11.2328 17.968 11.5833L11.6859 17.8654C11.3355 18.2158 10.7673 18.2158 10.4168 17.8654C10.0663 17.5149 10.0663 16.9467 10.4168 16.5962L16.0643 10.9487L10.4168 5.30125C10.0663 4.95078 10.0663 4.38255 10.4168 4.03208Z" fill="#2386BC"/>
-                        </svg>
-                    </div>
-                </button>
+                <div class="banner_text_main">
+                    <h1>
+                        歡迎來到我們的<br>
+                        期貨模擬交易系統！
+                    </h1>
+                    <p class="text">
+                        這個系統是為了幫助大眾更好地掌握期貨交易技巧而開發的。如果您是一位期貨交易的新手或者對風險把控較差，本系統將是您致勝的利器！
+                    </p>
+                </div>
+                <div class="d-flex align-items-center flex-wrap">
+                    <button class="btn_pill_bgBlue me-4" data-bs-toggle="modal" data-bs-target="#openAccount">
+                        <span>快速開戶</span>
+                        <div class="btn_pill_bgBlue_icon">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.87183 10.9487C3.87183 10.4531 4.27362 10.0513 4.76926 10.0513H17.3334C17.829 10.0513 18.2308 10.4531 18.2308 10.9487C18.2308 11.4444 17.829 11.8462 17.3334 11.8462H4.76926C4.27362 11.8462 3.87183 11.4444 3.87183 10.9487Z" fill="#2386BC"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4168 4.03208C10.7673 3.68161 11.3355 3.68161 11.6859 4.03208L17.968 10.3141C18.3185 10.6646 18.3185 11.2328 17.968 11.5833L11.6859 17.8654C11.3355 18.2158 10.7673 18.2158 10.4168 17.8654C10.0663 17.5149 10.0663 16.9467 10.4168 16.5962L16.0643 10.9487L10.4168 5.30125C10.0663 4.95078 10.0663 4.38255 10.4168 4.03208Z" fill="#2386BC"/>
+                            </svg>
+                        </div>
+                    </button>
+                    <button class="btn_pill_bgBlue" data-bs-toggle="modal" data-bs-target="#openAccount">
+                        <span>立即體驗</span>
+                        <div class="btn_pill_bgBlue_icon">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.87183 10.9487C3.87183 10.4531 4.27362 10.0513 4.76926 10.0513H17.3334C17.829 10.0513 18.2308 10.4531 18.2308 10.9487C18.2308 11.4444 17.829 11.8462 17.3334 11.8462H4.76926C4.27362 11.8462 3.87183 11.4444 3.87183 10.9487Z" fill="#2386BC"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4168 4.03208C10.7673 3.68161 11.3355 3.68161 11.6859 4.03208L17.968 10.3141C18.3185 10.6646 18.3185 11.2328 17.968 11.5833L11.6859 17.8654C11.3355 18.2158 10.7673 18.2158 10.4168 17.8654C10.0663 17.5149 10.0663 16.9467 10.4168 16.5962L16.0643 10.9487L10.4168 5.30125C10.0663 4.95078 10.0663 4.38255 10.4168 4.03208Z" fill="#2386BC"/>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
             </div>
         </div>
         <div class="why">
             <div class="container d-flex flex-wrap align-items-center">
                 <div class="why_pic"><img src="./public/img/why.png" alt=""></div>
                 <div class="why_text">
-                    <h2 class="subTitle">為何選擇鼎金國際證券</h2>
+                    <h2 class="subTitle">為何選擇鼎金科技</h2>
                     <p class="text">
                         全方位期貨模擬交易系統及報價服務。報價系統來自CME比較美國華爾街金融市場所使用最快速穩定即時的報價，以提供客戶最具競爭力的期貨看盤報價軟體為宗旨。<br>
                         <br>
@@ -85,7 +118,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="btn_pill_bgBlue mx-auto" data-bs-toggle="modal" data-bs-target="#openAccount">
+                    <!-- <button class="btn_pill_bgBlue mx-auto" data-bs-toggle="modal" data-bs-target="#openAccount">
                         <span>快速開戶</span>
                         <div class="btn_pill_bgBlue_icon">
                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -93,7 +126,7 @@
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4168 4.03208C10.7673 3.68161 11.3355 3.68161 11.6859 4.03208L17.968 10.3141C18.3185 10.6646 18.3185 11.2328 17.968 11.5833L11.6859 17.8654C11.3355 18.2158 10.7673 18.2158 10.4168 17.8654C10.0663 17.5149 10.0663 16.9467 10.4168 16.5962L16.0643 10.9487L10.4168 5.30125C10.0663 4.95078 10.0663 4.38255 10.4168 4.03208Z" fill="#2386BC"/>
                             </svg>
                         </div>
-                    </button>
+                    </button> -->
                 </div>
             </div>
         </div>
@@ -105,7 +138,7 @@
                         專門為期貨投資者設計的，功能強大、易用便捷、反應迅速。<br>
                         為了幫助客戶更好地把握市場，我們的軟體內置強大的技術指標服務。客戶可以根據自己的需求設置各種參數，得到即時的技術分析報告，幫助客戶制定更可靠的投資決策。
                     </p>
-                    <button class="btn_pill_bgBlue" data-bs-toggle="modal" data-bs-target="#openAccount">
+                    <!-- <button class="btn_pill_bgBlue" data-bs-toggle="modal" data-bs-target="#openAccount">
                         <span>快速開戶</span>
                         <div class="btn_pill_bgBlue_icon">
                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -113,7 +146,7 @@
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4168 4.03208C10.7673 3.68161 11.3355 3.68161 11.6859 4.03208L17.968 10.3141C18.3185 10.6646 18.3185 11.2328 17.968 11.5833L11.6859 17.8654C11.3355 18.2158 10.7673 18.2158 10.4168 17.8654C10.0663 17.5149 10.0663 16.9467 10.4168 16.5962L16.0643 10.9487L10.4168 5.30125C10.0663 4.95078 10.0663 4.38255 10.4168 4.03208Z" fill="#2386BC"/>
                             </svg>
                         </div>
-                    </button>
+                    </button> -->
                 </div>
                 <div class="wiser_icon">
                     <div class="wiser_icon_top d-flex align-items-end justify-content-center">
@@ -309,7 +342,7 @@
     <footer class="footer">
         <img class="round footer_round" src="./public/img/round-gray-3.svg" alt="">
         <div class="container d-lg-flex flex-wrap align-items-center justify-content-center">
-            <form action="" class="footer_form">
+            <!-- <form action="" class="footer_form">
                 <h3>登記已獲得最新資訊</h3>
                 <div class="row">
                     <div class="col-lg-12 col-ms-4 col-12">
@@ -332,12 +365,12 @@
                     </div>
                 </div>
                 <button>送出</button>
-            </form>
+            </form> -->
             <div class="footer_line d-flex align-items-center flex-wrap">
                 <div class="footer_line_qrcode"><img src="./public/img/qrcode.png" alt=""></div>
                 <div class="footer_line_text">
                     <h3>立刻加入我們的各大社群！</h3>
-                    <p>無需保證金，無匯率問題，千言萬語不如您親身體驗！</p>
+                    <!-- <p>無需保證金，無匯率問題，千言萬語不如您親身體驗！</p> -->
                     <a href="https://line.me/R/ti/p/@738mgrwn" target="_blank" class="btn_pill_bgWhite d-sm-flex d-none" data-bs-toggle="modal" data-bs-target="#openAccount">
                         <span>
                             立即加入24小時<br>
@@ -365,6 +398,7 @@
                 </a>
             </div>
         </div>
+        <p class="copyright">© Copyright 2023 - 鼎金科技 All Rights Reserved.</p>
     </footer>
 
     <div class="modal fade" id="openAccount" tabindex="-1" aria-labelledby="openAccountLabel" aria-hidden="true">
@@ -421,6 +455,12 @@
           </div>
         </div>
     </div>
+
+    <a class="btn-fixed" href="https://line.me/R/ti/p/@738mgrwn" target="_blank">
+        <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.5714 0C5.64143 0 0 4.60108 0 10.2557C0 15.3202 4.47333 19.5635 10.5129 20.3701C10.9225 20.4569 11.4798 20.6421 11.6212 20.9915C11.747 21.3085 11.704 21.7981 11.661 22.1287L11.4892 23.2021C11.4421 23.5191 11.2378 24.4502 12.5882 23.8811C13.9407 23.314 19.8335 19.5875 22.4735 16.5379C24.2796 14.5502 25.1429 12.5133 25.1429 10.2557C25.1429 4.60108 19.5014 0 12.5714 0ZM7.65076 13.6181H5.15114C4.78971 13.6181 4.49114 13.3178 4.49114 12.9558V7.93315C4.49114 7.57013 4.78971 7.26987 5.15114 7.26987C5.51571 7.26987 5.81114 7.57013 5.81114 7.93315V12.2926H7.65076C8.01533 12.2926 8.30971 12.5907 8.30971 12.9558C8.30971 13.3178 8.01429 13.6181 7.65076 13.6181ZM10.2342 12.9558C10.2342 13.3178 9.93876 13.6181 9.57314 13.6181C9.21171 13.6181 8.91628 13.3178 8.91628 12.9558V7.93315C8.91628 7.57013 9.21171 7.26987 9.57628 7.26987C9.93876 7.26987 10.2342 7.57013 10.2342 7.93315V12.9558ZM16.2486 12.9558C16.2486 13.2404 16.0663 13.4925 15.796 13.5835C15.729 13.6055 15.6567 13.616 15.5875 13.616C15.3665 13.616 15.1779 13.5208 15.0532 13.3523L12.4939 9.86021V12.9548C12.4939 13.3168 12.2016 13.617 11.8329 13.617C11.4704 13.617 11.177 13.3168 11.177 12.9548V7.93315C11.177 7.64859 11.3583 7.39646 11.6275 7.30649C11.6904 7.28243 11.77 7.27197 11.8308 7.27197C12.035 7.27197 12.2236 7.38181 12.3493 7.53979L14.9286 11.0455V7.93315C14.9286 7.57013 15.224 7.26987 15.5886 7.26987C15.95 7.26987 16.2486 7.57013 16.2486 7.93315V12.9558ZM20.2871 9.7807C20.6528 9.7807 20.9471 10.0809 20.9471 10.445C20.9471 10.808 20.6528 11.1083 20.2871 11.1083H18.4486V12.2926H20.2871C20.6528 12.2926 20.9471 12.5907 20.9471 12.9558C20.9471 13.3178 20.6528 13.6181 20.2871 13.6181H17.7875C17.4261 13.6181 17.1307 13.3178 17.1307 12.9558V7.93315C17.1307 7.57013 17.4261 7.26987 17.7907 7.26987H20.2903C20.6528 7.26987 20.9471 7.57013 20.9471 7.93315C20.9471 8.30036 20.6528 8.59642 20.2871 8.59642H18.4486V9.7807H20.2871Z" fill="white"/>
+        </svg>
+    </a>
 
 
     <script src="./public/js/jquery/jquery.min.js"></script>
